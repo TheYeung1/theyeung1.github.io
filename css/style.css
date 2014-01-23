@@ -16,7 +16,7 @@ article{
     height: 458px;
     position: relative;
     text-align: center;
-    top: 150px;
+    top: 100px;
     width: 100%;
     color: #FFFFFF;
     font-size: 72px;
@@ -30,19 +30,7 @@ article{
     -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
-/*
 
-#about article{
-    height: 458px;
-    position: relative;
-    text-align: center;
-    top: 150px;
-    width: 100%;
-    color: #FFFFFF;
-    font-size: 72px;
-    font-family: sans-serif;
-}
-*/
 
 #projects{
     background: url(../img/projects.jpg) 50% 0 repeat fixed;
@@ -51,19 +39,17 @@ article{
     width: 100%;
     position: relative;
 }
-/*
 
-#projects article{
-    height: 458px;
-    position: relative;
-    text-align: center;
-    top: 150px;
-    width: 100%;
-    color: #FFFFFF;
-    font-size: 72px;
-    font-family: sans-serif;
+#projects .carousel-control{
+    min-height:1000px;
 }
-*/
+
+#projects .carousel-control .control-symbol{
+    position:relative;
+    font-size: 72px;
+    top:450px;
+}
+
 
 #contact{
     background: url(../img/contact.jpg) 50% 0 repeat fixed;
@@ -72,14 +58,3 @@ article{
     width: 100%;
     position: relative;
 }
-/*
-#contact article{
-    height: 458px;
-    position: relative;
-    text-align: center;
-    top: 150px;
-    width: 100%;
-    color: #FFFFFF;
-    font-size: 72px;
-    font-family: sans-serif;
-}*/
