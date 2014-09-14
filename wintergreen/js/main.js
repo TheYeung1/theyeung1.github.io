@@ -1,5 +1,10 @@
+
+var colors = ['red', 'blue', 'green', 'yellow', 'white'];
+
 $(document).ready(function(){
   var yeah = new Audio('res/audio/yeah.mp3');
+
+
 
   window.setInterval(function(){
     var currentTime = Date.now();
@@ -29,11 +34,22 @@ $(document).ready(function(){
   });
 
   $("#turnt-yes").click(function(){
-    $("#liljon").append("<iframe id=\"liljonvid\" width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/CsyAagzMuUo?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>");
+    //$("#liljon").append("<iframe id=\"liljonvid\" width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/CsyAagzMuUo?rel=0&autoplay=1&cc_load_policy=1\" frameborder=\"0\" allowfullscreen><\/iframe>");
     $("#liljon").css("width", "100%");
     $("#liljon").css("height", "100%");
-    $("#liljonvid").css("width", "100%");
-    $("#liljonvid").css("height", "100%");
+    //$("#liljonvid").css("width", "100%");
+    //$("#liljonvid").css("height", "100%");
+    window.setInterval(function(){
+      $("#countdown-days").css('color', colors[Math.floor(Math.random()*colors.length)]);
+      $("#countdown-hours").css('color', colors[Math.floor(Math.random()*colors.length)]);
+      $("#countdown-minutes").css('color', colors[Math.floor(Math.random()*colors.length)]);
+      $("#countdown-seconds").css('color', colors[Math.floor(Math.random()*colors.length)]);
+      $(".count-time-label").css('color', colors[Math.floor(Math.random()*colors.length)]);
+      $("#crew-label").css('color', colors[Math.floor(Math.random()*colors.length)]);
+      $("#turnt-question").css('color', colors[Math.floor(Math.random()*colors.length)]);
+      $("#turnt-yes").css('color', colors[Math.floor(Math.random()*colors.length)]);
+      $("#turnt-no").css('color', colors[Math.floor(Math.random()*colors.length)]);
+    }, 100);
   });
 
 
