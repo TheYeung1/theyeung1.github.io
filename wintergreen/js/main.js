@@ -34,11 +34,11 @@ $(document).ready(function(){
   });
 
   $("#turnt-yes").click(function(){
-    //$("#liljon").append("<iframe id=\"liljonvid\" width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/CsyAagzMuUo?rel=0&autoplay=1&cc_load_policy=1\" frameborder=\"0\" allowfullscreen><\/iframe>");
+    $("#liljon").append("<iframe id=\"liljonvid\" width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/CsyAagzMuUo?rel=0&autoplay=1&cc_load_policy=1\" frameborder=\"0\" allowfullscreen><\/iframe>");
     $("#liljon").css("width", "100%");
     $("#liljon").css("height", "100%");
-    //$("#liljonvid").css("width", "100%");
-    //$("#liljonvid").css("height", "100%");
+    $("#liljonvid").css("width", "100%");
+    $("#liljonvid").css("height", "100%");
     window.setInterval(function(){
       $("#countdown-days").css('color', colors[Math.floor(Math.random()*colors.length)]);
       $("#countdown-hours").css('color', colors[Math.floor(Math.random()*colors.length)]);
