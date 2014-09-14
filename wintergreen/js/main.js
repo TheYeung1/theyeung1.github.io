@@ -40,14 +40,16 @@ $(document).ready(function(){
   });
 
   $("#turnt-yes").click(function(){
-    $("#liljon").append("<iframe id=\"wintergreenvid\" width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/HAL-D9BwpXY?rel=0&autoplay=1&cc_load_policy=1&t=25s&enablejsapi=1\" frameborder=\"0\" allowfullscreen><\/iframe>");
-    $("#liljon").append("<iframe id=\"liljonvid\" width=\"1280\" height=\"720\" style=\"visibility: hidden\" src=\"http:\/\/www.youtube.com\/embed\/CsyAagzMuUo?rel=0&autoplay=1&cc_load_policy=1&t=17s\" frameborder=\"0\" allowfullscreen><\/iframe>");
+    $("#liljon").append("<iframe id=\"wintergreenvid\" width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/HAL-D9BwpXY?rel=0&autoplay=1&cc_load_policy=1&t=25s&enablejsapi=1\" frameborder=\"0\" volume=\"0\" allowfullscreen><\/iframe>");
+    $("#liljon").append("<iframe id=\"liljonvid\" width=\"0\" height=\"0\" style=\"visibility: hidden\" src=\"http:\/\/www.youtube.com\/embed\/CsyAagzMuUo?rel=0&autoplay=1&cc_load_policy=1&t=17s\" frameborder=\"0\" allowfullscreen><\/iframe>");
     //var wintergreenvid = document.getElementById("wintergreenvid");
     //wintergreenvid.mute();
     $("#liljon").css("width", "100%");
     $("#liljon").css("height", "100%");
     $("#wintergreenvid").css("width", "100%");
     $("#wintergreenvid").css("height", "100%");
+    $("#liljonvid").css("width", "0%");
+    $("#liljonvid").css("height", "0%");
     window.setInterval(function(){
       $("#countdown-days")
       .css('color', colors[Math.floor(Math.random()*colors.length)])
