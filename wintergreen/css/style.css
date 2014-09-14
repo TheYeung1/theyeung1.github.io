@@ -1,0 +1,61 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+}
+
+.count-time{
+  display:inline-block;
+}
+
+.count-time-value{
+  font-size:50px;
+}
+
+.count-time-label{
+  font-size: 20px;
+}
+
+.turnt-answer{
+  display:inline-block;
+  transform:translate(-50%, 0%);
+  padding:25px;
+}
+
+#countdown{
+  padding:5px;
+  top:50%;
+  left:50%;
+  position:absolute;
+  transform: translate(-50%, -50%);
+}
+
+#crew-label{
+  left:50%;
+  position:absolute;
+  transform: translate(-50%, 0%);
+  white-space: nowrap;
+}
+
+#turnt-up{
+  top:70%;
+  left:50%;
+  position:absolute;
+  transform:translate(-50%, 0%);
+}
+
+#turnt-question{
+  font-size:40px;
+}
+
+
+#turnt-yes{
+  left:10%;
+  position:absolute;
+}
+
+#turnt-no{
+  left:90%;
+  position:absolute;
+}
