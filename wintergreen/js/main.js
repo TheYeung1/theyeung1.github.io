@@ -40,13 +40,25 @@ $(document).ready(function(){
     $("#liljonvid").css("width", "100%");
     $("#liljonvid").css("height", "100%");
     window.setInterval(function(){
-      $("#countdown-days").css('color', colors[Math.floor(Math.random()*colors.length)]);
-      $("#countdown-hours").css('color', colors[Math.floor(Math.random()*colors.length)]);
-      $("#countdown-minutes").css('color', colors[Math.floor(Math.random()*colors.length)]);
+      $("#countdown-days")
+      .css('color', colors[Math.floor(Math.random()*colors.length)])
+      .animate({
+        fontSize: (Math.floor(Math.random()*colors.length) * 40) + 10
+      }, 500);
+      $("#countdown-hours").css('color', colors[Math.floor(Math.random()*colors.length)])
+      .animate({
+        fontSize: (Math.floor(Math.random()*colors.length) * 40) + 10
+      }, 500);
+      $("#countdown-minutes").css('color', colors[Math.floor(Math.random()*colors.length)])
+      .animate({
+        fontSize: (Math.floor(Math.random()*colors.length) * 40) + 10
+      }, 500);
       $("#countdown-seconds").css('color', colors[Math.floor(Math.random()*colors.length)]);
       $(".count-time-label").css('color', colors[Math.floor(Math.random()*colors.length)]);
       $("#crew-label").css('color', colors[Math.floor(Math.random()*colors.length)]);
-      $("#turnt-question").css('color', colors[Math.floor(Math.random()*colors.length)]);
+      $("#turnt-question").css('color', colors[Math.floor(Math.random()*colors.length)]).animate({
+        fontSize: (Math.floor(Math.random()*colors.length) * 20) + 10
+      }, 500);
       $("#turnt-yes").css('color', colors[Math.floor(Math.random()*colors.length)]);
       $("#turnt-no").css('color', colors[Math.floor(Math.random()*colors.length)]);
     }, 100);
